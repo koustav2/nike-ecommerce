@@ -1,0 +1,52 @@
+{
+    "data": [
+      {
+        "size": "IND 6",
+        "enabled": true
+      },
+      {
+        "size": "IND 6.5",
+        "enabled": true
+      },
+      {
+        "size": "IND 7",
+        "enabled": true
+      },
+      {
+        "size": "IND 7.5",
+        "enabled": true
+      },
+      {
+        "size": "IND 8",
+        "enabled": true
+      },
+      {
+        "size": "IND 8.5",
+        "enabled": true
+      },
+      {
+        "size": "IND 9",
+        "enabled": true
+      },
+      {
+        "size": "IND 9.5",
+        "enabled": true
+      },
+      {
+        "size": "IND 10",
+        "enabled": true
+      },
+      {
+        "size": "IND 10.5",
+        "enabled": true
+      },
+      {
+        "size": "IND 11",
+        "enabled": false
+      },
+      {
+        "size": "IND 11.5",
+        "enabled": false
+      }
+    ]
+  }
