@@ -3,8 +3,6 @@ import './globals.css'
 import { AuthProvider } from '@/hooks/useAuth'
 import { Provider } from 'react-redux'
 import store from '@/redux/store/store'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -14,42 +12,29 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  
+
   return (
 
     <html lang="en">
-      {/* <>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet"
-        />
-      </> */}
       <body>
-        <AuthProvider >
-          {/* <Provider store={store}> */}
-          <ToastContainer
-            position="top-center"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="light"
-          />
-          {/* <Header /> */}
-          {children}
-          {/* </Provider> */}
-          {/* <Footer /> */}
-        </AuthProvider>
+        {/* <Provider store={store}> */}
+          <AuthProvider >
+            <ToastContainer
+              position="top-center"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+            />
+
+            {children}
+          </AuthProvider>
+        {/* </Provider> */}
       </body>
     </html>
   )
